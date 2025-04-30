@@ -1,0 +1,62 @@
+html,
+body{
+  margin: 0 auto;
+  height: 100%;   
+}
+
+pre{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+}
+
+.load{
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+  background: black;
+  position: fixed;
+  z-index: 100;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.start {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Adjust as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background: black;
+  color: white; /* Ensure text is readable */
+  font-family: monospace; /* Optional: for a terminal-like appearance */
+  padding: 10px; /* Optional: for better padding */
+  font-size: 1em;
+
+}
+
+.start:after {
+  content: "_";
+  opacity: 1;
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

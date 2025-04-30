@@ -1,0 +1,285 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    color: #fff;
+    margin: 0;
+}
+
+.author {
+    text-align: center;
+}
+
+.main_section {
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央揃え */
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+
+.header {
+    height: 100%;
+}
+
+video {
+    width: 100%;
+    height: auto; /* 高さを自動調整 */
+}
+
+#glcanvas {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: auto;
+    margin: 0 auto;
+    z-index: 5;
+}
+
+.card {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column; /* 縦方向に並べる */
+    align-items: center; /* 中央揃え */
+}
+
+.card__titletext {
+    margin-left: 1rem;
+}
+
+.card__overviewtext {
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+ul {
+    justify-content: center;
+    padding-inline-start: 0;
+    padding-left: 0;
+}
+
+.menu {
+    --bs-gutter-x: 0rem;
+    list-style: none;
+    position: fixed;
+    width: 100%;
+    height: 100%; /* メニューが画面いっぱいに広がる */
+    padding: 0;
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    overflow: hidden; /* スクロール無効 */
+    display: flex; /* Flexboxを使ってメニュー項目を中央揃え */
+    flex-direction: column; /* 項目を縦方向に並べる */
+    justify-content: center; /* 項目を縦方向で中央揃え */
+    align-items: center; /* 項目を横方向で中央揃え */
+}
+
+/* メニューを開いた時のスタイル */
+.menu-btn:checked ~ .menu {
+    transform: scale(1, 1);
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+
+/* メニューリンクのスタイル */
+.menu a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px; /* レタースペースを狭く */
+    text-transform: capitalize;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 15;
+    text-align: center;
+    display: block;
+    width: 100%; /* 幅を画面いっぱいに広げる */
+    padding: 20px 0; /* パディングを広げて項目間隔を確保 */
+}
+
+/* メニューアイテム */
+.menu li {
+    border-top: 1px solid rgb(75, 75, 75);
+    height: auto;
+    transition: 0.5s;
+    text-align: center;
+    font-size: 24px; /* フォントサイズを調整 */
+}
+
+/* メニューが開いた時に表示されるアニメーション */
+.menu-btn:checked ~ .menu a,
+.menu-btn:checked ~ .menu li {
+    opacity: 1;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-icon {
+    display: inline-block;
+    position: fixed;
+    z-index: 15;
+    cursor: pointer;
+    padding: 24px 14px;
+    top: 10px;
+    left: 5px;
+}
+
+.navicon {
+    background: #fff;
+    display: block;
+    height: 3px;
+    width: 26px;
+    position: relative;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+
+.navicon:before,
+.navicon:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+}
+
+.navicon:before {
+    top: 9px;
+}
+
+.navicon:after {
+    bottom: 9px;
+}
+
+/* ハンバーガーメニューのアニメーション */
+.menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
+    top: 0;
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    bottom: 0;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+    background: rgba(0, 0, 0, 0);
+}
+
+.navtext-container {
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navtext {
+    position: absolute;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+.sub_section {
+    font-size: x-large;
+}
+
+.link {
+    text-align: center;
+}
+
+/* メディアクエリでレスポンシブ対応 */
+@media screen and (min-width: 1200px) {
+    .menu a {
+        font-size: 80px;
+        letter-spacing: 1px; /* レタースペーシングを狭く */
+        padding: 20px 0; /* パディングを調整 */
+    }
+
+    .menu li {
+        height: auto; /* 高さを自動調整 */
+        margin: 0; /* アイテム間の余白を削除 */
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        padding-inline-start: 0;
+        padding-left: 0;
+    }
+
+    .img_card {
+        margin: 5px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .menu-item {
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .menu-item {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu a {
+        font-size: 4rem; /* 中程度のデバイスでのフォントサイズ */
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .menu a {
+        font-size: 2rem; /* 小さいデバイスでのフォントサイズ */
+        padding: 10px 0; /* パディングを調整 */
+    }
+
+    .menu li {
+        margin: 0; /* アイテム間の余白を削除 */
+    }
+}
+
+img {
+    width: 100%;
+}
