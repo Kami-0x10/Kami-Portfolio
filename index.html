@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex" />
+  <!-- jQuery を最初に読み込む -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./js/splash-screen.js" defer></script>
+  <script src="./js/hum_menu.js" defer></script>
+  <link rel="icon" href="./ico/favicon.ico">
+  <title>Kami-0x10's Site site</title>
+
+  <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <link href="./css/splash-screen.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width,initial-scale=0.5">
+  <!-- Bootstrap のスクリプトは jQuery の後に読み込む -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" defer></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" defer></script>
+
+  <div class="load">
+    <pre class="start"></pre>
+  </div>
+</head>
+<header>
+  <div id="Home"></div>
+</header>
+
+<!-- <body id="body"> -->
+
+<body id="body">
+  <div class="container">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label for="menu-btn" class="menu-icon" id="menu-icon">
+      <span class="navicon">
+      </span>
+    </label>
+
+    <ul class="menu">
+      <li class="top"><a href="#Home">Home</a></li>
+      <li><a href="#Profile">Profile</a></li>
+      <li><a href="#Favorites">Favorites</a></li>
+      <li><a href="#WorksAndLikes">WorksAndLikes</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#Link">Link</a></li>
+    </ul>
+
+    <br>
+    <canvas id="glcanvas" height="300"></canvas>
+    <script src="./js/glsl-shader.js"></script>
+    <br>
+    <br>
+    <br>
+    <h1 class="title">Kami<br>0x10</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <nav class="top-nav">
+      <ul>
+        <li class="menu-item"><a href="#Home">Home</a></li>
+        <li class="menu-item"><a href="#Profile">Profile</a></li>
+        <li class="menu-item"><a href="#Favorites">Favorites</a></li>
+        <li class="menu-item"><a href="#WorksAndLikes">WorksAndLikes</a></li>
+        <li class="menu-item"><a href="#Skills">Skills</a></li>
+        <li class="menu-item"><a href="#Link">Link</a></li>
+      </ul>
+    </nav>
+    <center><h4>glsl: copyright mrshoor</h4></center>
+    <br>
+    <center><a href="https://www.vertexshaderart.com/art/Piyv2py4bQL283mTB">url</a></center>
+    
+  </div>
+  <br>
+  <br>
+  <div class="main_section">
+    <div class="Profile">
+      <h2>Profile</h2>
+      kami-0x10
+      <p class="age" id="ageDisplay">
+        <script src="./js/age.js"></script><br>
+        中学時代、父親が買ってくれたコンピュータを手に取り、触り、どはまりし、そこからプログラマーの道を目指し、<br>
+        高校生の頃、一緒に遊んでいたSNS仲間に誘われて、OSC(Open Source Conference) に参加し、<br>
+        理解を深め、趣味でSNSサーバを開設いたしました。<br>
+        Ubuntu Server 18.04LTS等のOSを触りながら理解を深め、そこそこできるようにまで成長し、<br>
+        専門学校時代はLinuxコマンドで困り果てたクラスメイトを一からレクチャーし、教えたこともあります。<br><br>
+        <h5>中学時代</h5>
+        中学時代、コーディング経験はあまりなく、比較的簡単なhtml、cssをつかったかなりシンプルなサイト作りがメインでした<br>
+        たまにではありますが、Unity3Dを使ったゲーム作りを小規模ながら趣味の範囲で作っておりました。<br><br>
+        <h5>高校時代</h5>
+        高校時代はクラス一のPC好きで、クラスの女子にPCスキルをレクチャーしたり、充電コードを忘れた友人にコードをお貸ししたりしておりました。<br>
+        技術面では、当時Twitterに嫌気がさし、2017年(第一次マストドン全盛期)にマストドンという誰でもSNS管理者になれる<br>
+        プログラムに手を出し、運営していたことがあります。<br>
+        ちょうどその時期にOSC(オープンソースカンファレンス)に参加し、情報交換したり、<br>
+        学校外の友人が増えたりしました。<br><br>
+        <h5>専門学校時代</h5>
+        専門学校に入学する少し前に新型コロナウイルスが流行してしまい、大変でしたが、ありがたく、大宮にある専門学校に入学する運びとなりました。<br>
+        そこでは、Cをはじめ、JavaやPythonといった言語を学び、理解を深めました。<br>
+        専門時代は挫折も多く、１０年くらい続けていたプログラミングスキルが役に立たず、クラスメイトと比較してしまうことが多々ありました。<br>
+        それでも私は、<br>
+        「中学時代から夢見ていたこの業界で生きていく」<br>
+        と思い、決心し、紆余曲折ありましたが無事卒業を迎えることができました。<br><br>
+        </p>
+        <br>
+        <br>
+        <h5>社会人になってからの成果物</h5>
+        <div class="img_card">
+          <img src="./img/simpdon_screenshot1.png">
+
+          <br>
+          <br>
+          <img src="./img/simpdon_screenshot2.png">
+
+          <br>
+          <br>
+          <img src="./img/simpdon_screenshot3.png">
+
+          <br>
+          <p>XPやiOS6等の古いデバイスで動くSNSクライアントを製作</p>
+          <a href="https://Kami-0x10.github.io/simpdon/login.html">リンク</a>
+          <p>テスト用アカウントurl: https://mstdn.social</p>
+          <p>アクセストークン: jDUt6DxXL3kC3xIaQXceEC8pXGaSkzQaWTfwgzftfJM</p>
+          <p>テスト用アカウントですのでアクセストークン等、他言しないようお願いいたします。</p>
+          <br>
+          <br>
+          <div class="img_card">
+            <img src="./img/JSNS_screenshot1.png">
+
+            <br>
+            <br>
+            <img src="./img/JSNS_screenshot2.png">
+
+            <br>
+            <br>
+            <p>自作のSNS？掲示板を製作</p>
+            <a href="https://github.com/Kami-0x10/JSNS/">リンク(repo)</a>
+            <br>
+            <br>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div id="Favorites">
+          <h2>Favorites</h2>
+          <p>いろいろあります。<br>
+            PC組み立て、VR、ガジェット、カメラ、ゲームなど</p>
+          <br>
+        </div>
+        <br>
+        <br>
+        <div id="WorksAndLikes">
+          <h2>Works And Likes</h2>
+          <ul>
+            <div class="img_card">
+              <img src="./img/FLP01.png">
+              <p>レトロな雰囲気が好きなので、鯖用PCをレトロケースで組立</p>
+              <br>
+            </div>
+
+            <div class="img_card">
+              <img src="./img/mypc.jpg">
+              <p>自分で組立てた自作PC</p>
+              <br>
+            </div>
+
+            <div class="img_card">
+              <img src="./img/camera.jpg">
+              <p>コレクションのフィルムカメラ</p>
+              <br>
+            </div>
+
+            <div class="img_card">
+              <img src="./img/myvr.jpg">
+              <p>趣味で使用するVR機器</p>
+              <br>
+            </div>
+
+            <div class="img_card">
+              <img src="./img/raspi.jpg">
+              <p>昔、専門校時代に触ったラズパイ</p>
+              <br>
+            </div>
+
+            <div class="img_card">
+              <img src="./img/book.jpg">
+              <p>趣味関係で頂いた技術専門書</p>
+              <br>
+            </div>
+
+            <div class="img_card">
+              <img src="./img/vrc.jpg">
+              <p>VRChat(1)上に存在する阿部寛(2)のホームワールドにて</p>
+              <br>
+            </div>
+
+            <div class="img_card">
+              
+              <p>開発環境(趣味で始めたゲーム鯖含む)</p>
+              <br>
+            </div>
+          </ul>
+          1: VRChatは米VRChat Inc.の登録商標です。<br>
+          2: 非公式のファンメイドワールドです。<br><br>
+          <h5>Others...</h5>
+          <video src="./vid/BadAppleShader.mp4" loop="" autoplay="" muted="" playsinline="" oncontextmenu="return false;"></video><br>
+          <br>
+          他にも、VRChat用に作成したアバター内で動画もどきを流せるAssetも作っていたりします。<br>
+          プログラムとアニメーションは全部自分で作り上げました。<br>
+          一応、プログラムの作成上、使用した動画ファイルと楽曲は作者公認、使用許諾取得済みですが、DLする際は、個人利用の範疇でお願いいたします。<br>
+          <a href="./apk/BadApple.apk" download="BadApple.apk" class="download-btn">ダウンロード</a>
+          <p></p>
+        </div>
+        <br>
+        <br>
+        <div id="Skills">
+          <left>
+            <h2>Skills</h2>
+          </left>
+        </div>
+        <div class="card bg-card">
+          <div class="card__imgframe"></div>
+          <div class="card__textbox">
+            <div class="card__titletext">
+              <h4>SQL</h4>
+            </div>
+            <div class="card__overviewtext">
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="40"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%">40%</div>
+              </div>
+              <br>
+              インターン先でPHPと共に少し触りました。<br>
+              インターン先ではMYSQLを触っておりました。<br>
+              趣味でやっていたSNSサーバと専門学校時代のチーム課題で使用していたDBソフトはPostgreSQLを使用しておりました。
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="card">
+          <div class="card__imgframe"></div>
+          <div class="card__textbox">
+            <div class="card__titletext">
+              <h4>HTML</h4>
+            </div>
+            <div class="card__overviewtext">
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
+              </div>
+              <br>
+              このポートフォリオはHTML、CSS、JSを使用し作られています。<br>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="card">
+          <div class="card__imgframe"></div>
+          <div class="card__textbox">
+            <div class="card__titletext">
+              <h4>Python(3x)</h4>
+            </div>
+            <div class="card__overviewtext">
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="80"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+              </div>
+              <br>
+              Pythonは専門学校時代、必修でした。<br>
+              主に、3x系統の記述方法で勉強いたしました。<br>
+              私が最近作成したプログラムは、3D製図ソフト内で使用可能なPythonを使用し、<br>
+              テキストファイルを別形式に置き換えるものでございます。<br>
+              <br>
+              <br>
+              それ以外にも祖母が昔使っていたガラケー向けに画像の解像度を落とすプログラム等を作っております。<br>
+              卒業制作の際、SpringBootを使用し、勤怠管理システムの仕組みを勉強いたしました。<br>
+              下記のPHPスキルシート欄にも書きましたが、MVCモデルを改めて勉強するきっかけになった言語でもあります。<br>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="card">
+          <div class="card__imgframe"></div>
+          <div class="card__textbox">
+            <div class="card__titletext">
+              <h4>Java</h4>
+            </div>
+            <div class="card__overviewtext">
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="35"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 35%">35%</div>
+              </div>
+              <br>
+              Javaは専門学校時代に授業のカリキュラムで学びました。<br>
+              授業では、専門学校での学びが、Javaに関する基礎知識を深めることにつながりました。<br>
+              特にプログラミングの楽しさや、問題解決に向けたアプローチを考える過程に魅力を感じています。<br>
+              クラスやオブジェクトを使ったデザインパターンに興味を持ち、<br>
+              実際のプロジェクトでどのように活用できるかを考えながら学習を進めてきました。<br>
+              また、チームでのプロジェクト経験も大切にしており、<br>
+              協力し合うことでより良い成果を生み出すことの重要性を実感しました。<br>
+              周囲とのコミュニケーションを大切にしながら、自分のアイデアを柔軟に取り入れていく姿勢を心掛けています。<br>
+              今後も技術を磨きながら、チームと共に成長していける環境で挑戦していきたいと思っています。<br>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="card">
+         <div class="card__imgframe"></div>
+          <div class="card__textbox">
+            <div class="card__titletext">
+              <h4>C</h4>
+            </div>
+            <div class="card__overviewtext">
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="20"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%">20%</div>
+              </div>
+              <br>
+              C langは専門学校時代に必修であったため一通り勉強いたしました。<br>
+              特にメモリ辺りの理解が難しかったです。<br>
+              C langは基礎知識の塊だと認識しているので"要"かなと思っております。<br>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="card">
+          <div class="card__imgframe"></div>
+          <div class="card__textbox">
+            <div class="card__titletext">
+              <h4>C#</h4>
+            </div>
+            <div class="card__overviewtext">
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="30"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%">30%</div>
+              </div>
+              <br>
+              C#は、ゲーム開発に興味があったので、Unity3Dを自家用PCに入れて触りました。<br>
+              私が触った領域はあくまでもUnity3DのC#であったため、勉強しがいがあるかなと思っております。<br>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="card">
+          <div class="card__imgframe"></div>
+          <div class="card__textbox">
+            <div class="card__titletext">
+              <h4>PHP</h4>
+            </div>
+            <div class="card__overviewtext">
+              <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="40"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%">40%</div>
+              </div>
+              <br>
+              PHPはインターン先で少し触れました。<br>
+              インターン先ではPHP Laravelを使い、ECサイトの大まかな仕組みを勉強させていただきました。<br>
+              その際、MVCモデルと言ったウェブサイトのコードを分割する仕組みについても同時に勉強いたしました。<br>
+              結果、専門学校時代に行った卒業制作で勤怠管理システムを作るといった事に対し、円滑に対応できたかなと思います。<br>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div id="Link">
+          <left>
+            <h2>Link</h2>
+          </left>
+        </div>
+        <h1>
+          <div class="link"><a href="https://github.com/Kami-0x10">GitHub</a></div>
+        </h1>
+        <br>
+      </div>
+    </div>
+  </body>
+</html>
